@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=density_small" />
+  <title>aamirr</title>
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "b1Fd6rdG7_JzJByr8",
+      });
+   })();
+</script>
+
+</head>
+
+
+
+
+
+
+
+
+<body class="bg-gradient-to-t from-[#ffeec7]  to-[#ffe7a7] scroll-smooth "></body>
+
+<!-- <---------------------------------------------navbar-------------------------------------------------------------->
+
+
+
+
+
+
+<nav class="fixed top-0 m-0 w-full md:mt-0 z-10">
+  <!--~~~~~~~~~~~~~~~~~~logo~~~~~~~~~~~~~~~~~-->
+  <div id="navbar-div"
+    class="bg-linear-to-t from-[#438d43]  to-[#406440] w-full h-15 flex justify-between items-center pl-2 p-3 shadow-2xl  ">
+    <div id="logo-div">
+      <a href="#hero">
+        <h1
+          CLASS="font-extrabold md:hover:scale-105 hover:text-amber-200 transition-all ease-out text-[#e3d3aa] font-sans text-[30px]  md:text-[30px] lg:text-[40px]">
+          AAMIRR.</h1>
+      </a>
+    </div>
+    <!--~~~~~~~~~~~~~~~~nav menu~~~~~~~~~~~~~~~~-->
+    <div id="nav-list " class="flex justify-evenly">
+
+      <ul class="flex text-[#F5F1E8] gap-5 font-bold md:gap-10 lg:gap-20  ">
+        <li class="hidden md:flex hover:scale-110  hover:text-amber-200 transition-all ease-out "><a href="#hero">
+            HOME</a></li>
+        <li class="hidden md:flex  hover:scale-110  hover:text-amber-200 transition-all ease-out"><a href="#about-div">
+            ABOUT</a></li>
+        <li class="hidden md:flex   hover:scale-110  hover:text-amber-200 transition-all ease-out "><a
+            href="#skills">SKILLS</a></li>
+        <li class="hidden md:flex   hover:scale-110  hover:text-amber-200 transition-all ease-out"><a
+            href="#projects">PROJECTS</a></li>
+
+        <li id="icon-toggle"onclick="toggleIcon()"  class= "cursor-pointer hover:scale-110  transition-all ease-out hover:text-amber-200">
+          <span id="icon1" class=""><a href="#">  <i class="fa-regular fa-moon"></i></a></span>
+           <span id="icon2" class="hidden"><a href="#" >  <i class="fa-solid fa-moon"></i></a></span>
+        
+        </li>
+
+
+        <li class=" block md:hidden hover:scale-110 transition-all ease-out hover:text-amber-200 group">
+          <i id="dropdown" class="fa-solid fa-bars  "></i>
+          <div class="  absolute rounded bg-amber-100  hidden group-hover:block ">
+            <a class="block text-[#000] py-[5px] px-[10px] hover:bg-amber-200" href="#hero-div">HOME</a>
+            <a class="block text-[#000] py-[5px] px-[10px] hover:bg-amber-200" href="#about-me">ABOUT</a>
+            <a class="block text-[#000] py-[5px] px-[10px] hover:bg-amber-200" href="#skills">SKILLS</a>
+            <a class="block text-[#000] py-[5px] px-[10px] hover:bg-amber-200" href="#projects">PROJECTS</a>
+          </div>
+        </li>
+
+
+
+        <li><button
+            class="bg-[#ffbf00] rounded-[50px] md:text-[15px] text-[10px] md:px-4 px-[5px] h-7  hover:bg-[#e66d03] font-extrabold hover:scale-110  transition-all ease-out text-[#214231]"><a
+              href="#contact">get in touch!</a></button></li>
+
+
+
+
+      </ul>
+
+
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+
+<!--------------------------------------------body------------------------------------------->
+<div id="body" class="mb-0">
+
+
+  <!---------------------------intro----------------->
+
+
+
+  <div id="hero-div"
+    class="  m-0  rounded-b-4xl    md:m-[50px] bg-linear-to-l from-[#406440] via-[#438d43] to-[#406440] md:rounded-b-4xl ">
+
+
+
+    <div id="hero" class=" grid grid-cols-2   md:items-center w-full h-1/2 p-[50px]">
+      <div id="intro" class=" flex justify-center  md:pr-20 ">
+        <div class="">
+          <h1 class="font-extrabold text-[40px] flex justify-start text-amber-100"> Hello,</h1>
+          <p class="font-bold sm:text-[10px] md:text-[15px] lg:text-[20px] text-sm text-amber-50">I'm <a
+              href="#about-me" title="about me"><b class="text-[#ffbf00]">AAMIR SUFIYAN N </b></a>, a self-taught
+            aspiring software developer who sees
+            every challenge
+            as an opportunity driven by curiosity and creativity.</p>
+          <a class="  inline-block" href="https://www.linkedin.com/in/aamir-sufiyan-n-16a58a372" target="_blank"
+            title="linkedin">
+            <button
+              class="bg-[#e66d03] rounded-[50px] text-[15px] my-2 px-4  w-[160px] h-7 font-extrabold text-[#F5F1E8]   transition-all ease-out hover:scale-110 hover:bg-[#e65603]"><i
+                class="fa-brands fa-linkedin mr-2 inline"></i>linkedin</button></a>
+        </div>
+      </div>
+      <div id="picture" class="flex items-center sm:pl-[20px]  justify-center">
+        <img src="/IMAGES/picture.webp" alt="image"
+          class=" hover:rotate-2  hover:scale-[1.03] transition-all ease-out overflow-hidden  h-[150px] shadow-2xs w-[150px] rounded-full my-3  ml-2 lg:ml-0  md:h-[300px] md:w-[300px] md:rounded-full     lg:h-[400px] lg:w-[400px] lg:rounded-full">
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!----------------------------------------about me---------------------------------------->
+
+
+
+
+
+  <div id="about-div" class=" m-0  md:p-[50px] ">
+
+    <div id="about-me"
+      class="grid  grid-cols-1  p-[20px] md:grid-cols-2 grid-rows-2 md:grid-rows-1 w-full h-[500px] bg-linear-to-l from-[#406440] via-[#438d43] to-[#406440] mt-2 md:mt-0 rounded-t-4xl">
+
+
+      <div id="left" class=" mb md:m-[30px] md:mr-0 rounded-3xl md:rounded-r-none flex flex-col pr-8  ">
+        <h2 class="text-amber-100 font-extrabold text-3xl ">About me,</h2>
+        <p class=" text-[12px] md:text-[15px]  text-justify md:font-bold font-family: 'Open Sans', sans-serif; ">Im a
+          passionate web developer
+          from <a href="https://maps.app.goo.gl/bkC8uAJ3KNFte2Z86" title="see location "
+            target="_blank"><u>kerala,india</u></a> who enjoys turning ideas into interactive websites. Im self
+          taught,
+          I work with JavaScript, HTML, and tailwindCSS, and I'm expanding my skills in backend development
+          using Python..
+          I love solving problems, experimenting with code, and creating clean, user-friendly experiences. Always
+          learning, always building.
+          </p>
+        <div class="flex justify-start  text-[15px] md:text-[30px]">
+          <a href="https://github.com/aamirsufiyan" target="_blank" title="visit github"><i
+              class="fa-brands fa-github m-[10px] text-amber-100 hover:text-amber-600 transition-all ease-out hover:scale-125"></i></a><a
+            href="https://www.linkedin.com/in/aamir-sufiyan-n" target="_blank" title="visit linkedin"><i
+              class="fa-brands fa-linkedin m-[10px] transition-all ease-out text-amber-100 hover:text-amber-600 hover:scale-125"></i></a>
+        </div>
+
+
+
+
+
+        <!-- <div >
+              <img src="/IMAGES/picobg.png" class=" hidden lg:block w-200px h-200px relative bottom-[50px] opacity-20">
+            </div> -->
+
+
+
+      </div>
+
+
+
+
+
+
+      <div id="right"
+        class=" bg-linear-to-b from-[#ffb700]  h-[200px] w-full m-0 rounded-3xl    md:h-full md:w-full  lg:h-full lg:w-full   flex px-1.5 py-0 md:flex-col justify-evenly md:items-center  ">
+        <div id="education"
+          class=" h-[200px] w-[150px] m-0 rounded-3xl    md:h-full md:w-full  lg:h-full lg:w-full   flex px-1.5 py-0 flex-col justify-evenly">
+          <h2 class="font-extrabold  text-[15px]  md:text-[20px] lg:text-[30px]">Education</h2>
+          <div>
+            <p class="font-bold md:block hidden">Higher Secondary(2023-25)</p>
+            <p class="font-bold md:hidden">HSS(2023-25)</p>
+            <p class="font-light">Computer Science</p>
+          </div>
+          <div>
+            <p class="font-bold">Intern (2025)</p>
+            <p class="font-light">bridgeon</p>
+          </div>
+        </div>
+
+
+
+
+        <div
+          class="  h-[200px] w-[150px] m-0 rounded-3xl    md:h-full md:w-full  lg:h-full lg:w-full   flex px-1.5 py-0 flex-col justify-evenly">
+          <h2 class="font-extrabold  text-[15px]  md:text-[20px] lg:text-[30px]">familiar languages</h2>
+          <div class="">
+            <p class="font-bold">English</p>
+            <p class="font-light">Advanced</p>
+          </div>
+          <div>
+            <p class="font-bold">Malayalam</p>
+            <p class="font-light">Native</p>
+          </div>
+        </div>
+
+        <div
+          class=" col-span-2 h-[200px] w-1/2 m-0  hidden md:flex   rounded-3xl  md:h-full md:w-full lg:h-full lg:w-full   px-1.5 py-0 flex-col justify-evenly">
+          <h2 class=" hidden md:flex font-extrabold  text-[15px] md:text-[30px]  justify-center">Hobbies & Interests
+          </h2>
+          <div class="hidden md:block ">
+
+            <p class=" text-4xl flex justify-evenly mt-3 "> <i class="fa-solid fa-futbol"></i> <i
+                class="fa-solid fa-film"></i> <i class="fa-solid fa-palette"></i> <i class="fa-solid fa-music"></i><i
+                class="fa-solid fa-code"></i></p>
+            <ul class="flex justify-evenly">
+              <li class="relative z--1 left-[-10px]">football</li>
+              <li class="relative left-[-16px]">films</li>
+              <li class="relative left-[-9px]">art</li>
+              <li class="relative left-[5px]">music</li>
+              <li>coding</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------------------skills----------------------------------->
+    </div>
+    <div id="skills"
+      class="  pt-[60px]  p-[10px] px-[50px] grid grid-cols-1 md:grid-cols-2  p-50px w-full h-[500px] bg-linear-to-l from-[#406440] via-[#438d43] to-[#406440]">
+
+      <div
+        class=" hidden md:flex justify-evenly items-start rounded-4xl text-[100px] md:text-[150px] md:flex-col md:justify-center md:items-center lg:flex-row lg:gap-3 lg:text-[170px]">
+        <i class="fa-brands fa-html5 text-[#ffb700] "></i>
+        <i class="fa-brands fa-css3-alt  text-[#ffb700]"></i>
+        <i class="fa-brands fa-js text-[#ffb700]"></i>
+
+      </div>
+
+      <div class="p-2">
+        <h2 class="text-amber-100 font-extrabold text-3xl">Skills,</h2>
+        <p
+          class="text-base md:text-lg lg:text-xl mt-2 text-start text-[15px] md:text-[15px]  md:font-bold font-family: 'Open Sans', sans-serif;">
+          Self-taught and driven by curiosity, I’ve embraced coding as a creative outlet learning through hands-on
+          exploration and problem-solving has deeply shaped how I understand design and development.
+          I work confidently with HTML, CSS, JavaScript, and Tailwind CSS, building responsive interfaces that
+          reflect both function and feeling.
+        <p class="hidden md:inline  md:font-bold font-family: 'Open Sans', sans-serif;"> I'm currently exploring the
+          fundamentals of UI/UX design,
+          along with diving into backend development using Go,focusing on creating intuitive layouts and experiences
+          that connect with users.</p>
+        </p>
+      </div>
+      <div class=" flex md:hidden  justify-evenly items-start rounded-4xl text-[100px] ">
+        <i class="fa-brands fa-html5 text-[#ffb700] transition-all ease-out"></i>
+        <i class="fa-brands fa-css3-alt text-[#ffb700]  "></i>
+        <i class="fa-brands fa-js text-[#ffb700]"></i>
+
+      </div>
+
+
+
+
+    </div>
+
+
+    <div id="projects"
+      class=" md:gap-8  md:p-[50px] p-5  grid grid-cols-1 md:grid-cols-2 mt-0  w-full rounded-b-4xl md:h-[500px] h-full bg-linear-to-l from-[#406440] via-[#438d43] to-[#406440]">
+
+      <div>
+        <h2 class="text-amber-100 font-extrabold text-4xl mb-[15px]">Projects</h2>
+        <img class="rounded-2xl hover:shadow-2xl transition-all ease-out  md:mb-[10px]" src="/IMAGES/agoda-clone.png">
+        <p class="text-center text-[13px] md:text-[16px]  md:font-bold ">made a clone of <a>agoda's</a> website this was
+          challenging as well as fun, i definitely learned a lot during the process and was super happy with the result.
+        </p>
+
+
+      </div>
+      <div class="pt-[50px]">
+        <img class=" md:mb-[10px] hover:shadow-2xl transition-all ease-out relative md:mt-[8px] rounded-2xl"
+          src="/IMAGES/w3-clone.png">
+        <p class="text-center text-[13px] md:text-[16px] md:font-bold ">Made a clone of <a>w3school's </a> navbar, it was
+          fun,
+          learned a lot during the process</p>
+      </div>
+
+    </div>
+
+<!-----------------------------------------contact-------------------------------------------------->
+
+
+  </div>
+  <div id="contact" class="md:px-[50px] mt-[10px] pb-0 mb-0">
+    <div id="connect-div" class="w-full h-full  grid  grid-cols-1 md:grid-cols-2 md:grid-rows-[1fr_3fr] grid-rows-2 bg-linear-to-l from-[#406440] via-[#438d43] to-[#406440] p-[50px] rounded-t-4xl">
+      <div class="md:col-span-2 ">
+        <h2 class="text-amber-100 font-extrabold text-3xl">Contact me</h2>
+        <p class="font-bold">Let's connect and create something awesome!</p>
+
+          <div id="left" class="p-[20px] md:hidden flex-col justify-between ">
+
+        <i class="fa-regular fa-envelope relative   text-[30px] top-[40px] right-[10px] "></i>
+        
+        <p class="font-bold text-[20px] pl-[30px]">Email</p>
+        <p class="font-light pl-[30px] text-[13px] relative bottom-[8px]"><a>aamirsufe@gmail.com</a></p>
+
+        <i class="fa-solid fa-phone relative text-[30px] top-[40px] right-[10px]"></i>
+
+        <p class="font-bold text-[20px] pl-[30px]">Phone</p>
+        <p class="font-light text-[13px] relative pl-[30px] bottom-[6px]"><a>6238985542</a></p>
+
+        <!-- <div class="mt-[30px]">
+          <p class="font-bold">get in touch</p>
+          <ul class="flex gap-3">
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-brands fa-whatsapp"></i></li>
+            <li><i class="fa-regular fa-envelope"></i></li>
+          </ul>
+        </div> -->
+
+
+
+
+
+      </div>
+
+
+
+
+
+      </div>
+      <div id="left" class="p-[20px] hidden md:flex flex-col justify-between">
+
+        <i class="fa-regular fa-envelope relative   text-[30px] top-[40px] right-[10px] "></i>
+        
+        <p class="font-bold text-[20px] pl-[30px]">Email</p>
+        <p class="font-light pl-[30px] text-[13px] relative bottom-[8px]"><a>aamirsufe@gmail.com</a></p>
+
+        <i class="fa-solid fa-phone relative text-[30px] top-[40px] right-[10px]"></i>
+
+        <p class="font-bold text-[20px] pl-[30px]">Phone</p>
+        <p class="font-light text-[13px] relative pl-[30px] bottom-[6px]"><a>6238985542</a></p>
+
+        <div class="mt-[60px]">
+          <p class="font-bold">get in touch</p>
+          <ul class="flex gap-3">
+            <li class="hover:scale-[1.2] transition-all ease-out hover:text-pink-500"><a href="https://www.instagram.com/aamirsufe/" target="_blank"> <i class="fa-brands fa-instagram"></i></a></li>
+            <li class="text-gray-700 hover:scale-[1.2] transition-all ease-out hover:text-gray-500 cursor-pointer"><a><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li class="hover:scale-[1.2] transition-all ease-out hover:text-blue-700"><a href="https://www.linkedin.com/in/aamir-sufiyan-n" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="hover:scale-[1.2] transition-all ease-out hover:text-gray-100"><a href="https://github.com/aamirsufiyan" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            
+            <li class="text-gray-700 hover:scale-[1.2] transition-all ease-out hover:text-gray-500 cursor-pointer"><a  target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+          </ul>
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+      <div id="right" class=" gap-2.5 flex flex-col justify-evenly items-start p-[30px] rounded-2xl  bg-linear-to-b from-[#ffb700]">
+        <input id="name" type="text" placeholder="Name" required class="border-[1px] w-full rounded-xl px-[10px] hover:scale-[1.01] transition-all ease-out outline-none focus:bg-[#ffa200cc] focus:scale-[1.02]  ">
+        <input id="mail" type="email" required placeholder="e-mail" class="outline-none border-[1px] w-full rounded-xl px-[10px] hover:scale-[1.01] transition-all ease-out focus:bg-[#ffa200cc] focus:scale-[1.02] ">
+        <textarea id="msg" placeholder="Message..." class="border-[1px] rounded-xl w-full px-[10px] hover:scale-[1.02] transition-all ease-out outline-none focus:bg-[#ffa200cc] focus:scale-[1.02]  "></textarea>
+        <button class="bg-[#e66d03] rounded-[50px] text-[15px] my-2 px-4  w-[160px] h-7 font-extrabold text-[#F5F1E8]   transition-all ease-out hover:scale-110 hover:bg-[#e65603]  cursor-pointer  " onclick="sendmail()">Send Message</button>
+
+         <div class="md:hidden block">
+          <p class="font-bold">get in touch</p>
+           <ul class="flex gap-3">
+            <li class="hover:scale-[1.2] transition-all ease-out hover:text-pink-500"><a href="https://www.instagram.com/aamirsufe/" target="_blank"> <i class="fa-brands fa-instagram"></i></a></li>
+            <li class="text-gray-700 hover:scale-[1.2] transition-all ease-out hover:text-gray-500 cursor-pointer"><a><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li class="hover:scale-[1.2] transition-all ease-out hover:text-blue-700"><a href="https://www.linkedin.com/in/aamir-sufiyan-n" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="hover:scale-[1.2] transition-all ease-out hover:text-gray-100"><a href="https://github.com/aamirsufiyan" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            
+            <li class="text-gray-700 hover:scale-[1.2] transition-all ease-out hover:text-gray-500 cursor-pointer"><a  target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+          </ul>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
